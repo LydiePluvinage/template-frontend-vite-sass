@@ -9,8 +9,7 @@
     "lint": "echo '----- Checking Frontend...' && prettier --debug-check . && eslint --ext .jsx . && echo '----- Done!'",
     "fix": "prettier --write . && eslint --fix --ext .jsx .",
     "prepare": "husky install",
-    "predeploy": "npm run build && vercel ./dist",
-    "deploy": "vercel --prod"
+    "deploy": "npm run build && npx vercel ./dist"
   },
   "dependencies": {
     "autoprefixer": "^10.4.4",
