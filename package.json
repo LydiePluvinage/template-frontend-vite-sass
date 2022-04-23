@@ -7,11 +7,15 @@
     "build": "vite build",
     "preview": "vite preview",
     "lint": "echo '----- Checking Frontend...' && prettier --debug-check . && eslint --ext .jsx . && echo '----- Done!'",
-    "fix": "prettier --write . && eslint --fix --ext .jsx ."
+    "fix": "prettier --write . && eslint --fix --ext .jsx .",
+    "prepare": "husky install"
   },
   "dependencies": {
+    "autoprefixer": "^10.4.4",
+    "postcss": "^8.4.12",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "tailwindcss": "^3.0.24"
   },
   "devDependencies": {
     "@vitejs/plugin-react": "^1.0.7",

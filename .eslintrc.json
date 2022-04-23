@@ -18,26 +18,18 @@
   "plugins": ["react", "import"],
   "rules": {
     "no-console": "off",
-    "no-restricted-syntax": [
-      "error",
-      {
-        "selector": "CallExpression[callee.object.name='console'][callee.property.name!=/^(error|warn)$/]",
-        "message": "You can only call the error() and warn() functions from the console object"
-      }
-    ],
     "react/react-in-jsx-scope": "off",
-    "react/jsx-one-expression-per-line": "off"
+    "react/function-component-definition": [0],
+    "import/extensions": [0, "ignorePackages"],
+    "react/no-array-index-key": "off",
+    "react/jsx-props-no-spreading": "off"
   },
   "settings": {
-    "import/resolver": {
-      "eslint-import-resolver-custom-alias": {
-        "alias": {
-          "@assets": "./src/assets",
-          "@components": "./src/components",
-          "@pages": "./src/pages",
-          "@services": "./src/services"
-        },
-        "extensions": [".js", ".jsx"]
+    "settings": {
+      "import/resolver": {
+        "node": {
+          "paths": ["src"]
+        }
       }
     }
   }
