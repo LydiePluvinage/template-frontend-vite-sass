@@ -1,10 +1,10 @@
-import "./App.css";
+import "./App.scss";
 function App() {
   return (
-    <div className="flex items-center justify-center w-screen h-screen text-xl text-white bg-slate-500 text-shadow-md">
-      <p>
+    <div className="app">
+      <p className="app__text">
         Ce template est bien configuré pour vos applications front-end avec Vite
-        et Tailwind
+        et Sass
       </p>
     </div>
   );
