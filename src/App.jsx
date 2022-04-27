@@ -7,6 +7,7 @@ function App() {
         Ce template est bien configuré pour vos applications front-end avec
         Vite, Sass et Vercel
       </p>
+      <img width={150} height={150} src="./assets/dinosaur.png" alt="" />
     </div>
   );
 }
