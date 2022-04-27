@@ -1,4 +1,5 @@
 import "./App.scss";
+import dino from "./assets/dinosaur.png";
 
 function App() {
   return (
@@ -7,7 +8,7 @@ function App() {
         Ce template est bien configuré pour vos applications front-end avec
         Vite, Sass et Vercel
       </p>
-      <img width={150} height={150} src="/src/assets/dinosaur.png" alt="" />
+      <img width={150} height={150} src={dino} alt="" />
     </div>
   );
 }
