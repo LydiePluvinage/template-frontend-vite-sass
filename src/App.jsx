@@ -9,6 +9,7 @@ function App() {
         Vite, Sass et Vercel
       </p>
       <img width={150} height={150} src={dino} alt="" />
+      <img width={150} height={150} src="/assets/trex.png" alt="" />
     </div>
   );
 }
